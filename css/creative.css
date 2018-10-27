@@ -357,7 +357,7 @@ h1 {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-  background: #456990;
+  background: #f05f40;
   padding: 50px 0;
 }
 
@@ -367,7 +367,8 @@ h1 {
   width: 6px;
   margin: 0 auto;
   padding-top: 50px;
-  background: #fff;
+  background:#fff;
+  color: #000;
 }
 
 .timeline ul li::after {
@@ -387,37 +388,22 @@ h1 {
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #F05F40 !important;
+  border-radius: 30px;
+  background: #fff !important;
 }
 
-.timeline ul li div::before {
-  content: '';
-  position: absolute;
-  bottom: 7px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
 
 .timeline ul li:nth-child(odd) div {
   left: 45px;
 }
 
-.timeline ul li:nth-child(odd) div::before {
-  left: -15px;
-  border-width: 8px 16px 8px 0;
-  border-color: transparent #F45B69 transparent transparent;
-}
+
 
 .timeline ul li:nth-child(even) div {
   left: -439px;
 }
 
-.timeline ul li:nth-child(even) div::before {
-  right: -15px;
-  border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #F45B69;
-}
+
 
 time {
   display: block;
@@ -435,7 +421,7 @@ time {
 }
 
 .timeline ul li.in-view::after {
-  background: #F05F40;
+  background: #fff;
 }
 
 .timeline ul li div {
@@ -488,3 +474,5 @@ time {
     border-color: transparent #F45B69 transparent transparent;
   }
 }
+
+
